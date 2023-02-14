@@ -83,7 +83,7 @@ nav li a:hover:before{
 header {
     width: 100%;
     margin: 0;
-    background-color: #eadfff;
+    height: 62vh;
 }
 
 header h1, h2{
@@ -91,20 +91,26 @@ header h1, h2{
 }
 
 #topo {
-    
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     font-size: 1.2em;
-    background: linear-gradient(rgba(17,17,17, 0.5), rgba(20, 20, 20, 1)) , url(/img/backgroundtopo.jpg);
+    background: linear-gradient(rgba(17,17,17, 0.5), rgba(20, 20, 20, 1)) , url(/img/backgroundtopo-pq.jpg);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#topo h1{
+    margin-top: 2em;
 }
 
 #topo h2{
     font-weight: 600;
+    
 }
 
 #topo span{
@@ -121,8 +127,8 @@ header h1, h2{
    color: #010101;
    text-decoration: none;
    background-color: white;
-   padding: 30px;
-   margin-bottom: 10px;
+   padding: 20px;
+   margin-top: 30px;
    border-radius: 5px;
    display: inline-block;
    transition: all .5s;
@@ -140,11 +146,18 @@ header h1, h2{
     align-items: center;
     text-align: center;
     width: 100%;
+    display: block;
     font-size: 1.2em;
+    padding-top: 3em;
 }
 
 #habilidades h3{
     text-decoration: underline;
+    margin-bottom: .2em;
+}
+
+#habilidades p{
+    margin-bottom: 2em;
 }
 
 /* Projetos - cybersecurity, sapatos e inovando*/
@@ -154,7 +167,16 @@ header h1, h2{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    padding-top: 3em;
+}
+
+#projetos h2{
+    padding-bottom: .5em;
+    padding-top: 2em;
+}
+
+.subtitulo-projetos{
+    margin-bottom: 1em;
 }
 
 #projetos-nomes{
@@ -220,6 +242,10 @@ header h1, h2{
     margin-bottom:42px;
 }
 
+#contatos h2{
+    margin-top: 100px;
+}
+
 #contatos > div{
     display: flex;
     flex-direction: row;
@@ -228,7 +254,7 @@ header h1, h2{
 }
 
 .fa-solid, .fa-brands{
-    font-size: 80px;
+    font-size: 60px;
     color: black;
     transition: all .5s;
 }
@@ -244,20 +270,30 @@ header h1, h2{
     right: 20px;
     text-decoration: none;
     background: black;
-    padding: 10px;
+    padding: 12px 15px;
 }
 
 /* Rodape - Desenvolvedor e atribuições */
 
 footer{
     background-color: #eadfff;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 30px;
     text-align: center;
 }
 
 /* Responsividade */
 
 @media screen and (min-width: 768px) {
+    #topo {
+        background:transparent;
+    }
+
+    #topo{
+        background: linear-gradient(rgba(17,17,17, 0.5), rgba(20, 20, 20, 1)) , url(/img/backgroundtopo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
     #menu ul{
         display: flex;
@@ -289,6 +325,14 @@ footer{
 
     .logo3{
         width: 22%;
+    }
+
+    #topo p{
+        margin-top: 40px;
+    }
+
+    .button{
+        margin-top: 50px;
     }
 
     #habilidades{
