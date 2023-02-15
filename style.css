@@ -399,3 +399,23 @@ footer{
     }
 
 }
+
+@media screen and (max-width: 284px){
+
+    #topo{
+        background: transparent;
+    }
+
+    #topo{
+        background: linear-gradient(rgba(17,17,17, 0.5), rgba(20, 20, 20, 1)) , url(/img/backgroundtopo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #topo h1{
+        margin-top: .7em;
+    }
+    .button{
+        border: 1px solid black;
+    }
+}
