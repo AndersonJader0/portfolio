@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ProjetoAtualizado/estilo.css">
+    <link rel="stylesheet" href="../ProjetoAtualizado/icomoon/style.css">
+    <script src="../ProjetoAtualizado/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header class="cabeçalho">
+        <div class="container-first-text">
+        <h1 class="title">Anderson Jader</h1>
+        <h2 class="sub-title">Desenvolvedor Front-end</h2>
+        </div>
+        <nav class="menu">
+            <a href="#sobre" title="Campo sobre mim"><li>Sobre mim</li></a>
+            <a href="#habilidades" title="Campo sobre minhas habilidades"><li>Habilidades</li></a>
+            <a href="#projetos" title="Campo sobre meus projetos"><li>Projetos</li></a>
+            <a href="#contatos" title="Campo dos meus contatos"><li>Contato</li></a>
+        </nav>
+    </header>
+
+    <section class="topo">
+    <article class="topo-art1">
+        <h3>Um desenvolvedor apaixonado por solucionar problemas voltados a web.</h3>
+        <span class="icon-display"></span>
+    </article>
+
+    <article class="topo-art2">
+        <h3>Em busca de uma oportunidade de estágio.</h3>
+        <span class="icon-briefcase"></span>
+    </article>
+
+    <span class="icon-arrow-down"></span>
+    </section>
+
+    <main class="principal">
+        <section class="principal-content">
+            <section class="Sobre-e-habilidades">
+            <article id="sobre">
+                <span class="icon-newspaper"></span>
+                <h4>Sobre mim</h4>
+                <p> Olá, me chamo Anderson Jader tenho 19 anos e estou atualmente 
+                    estudando na Universidade São Judas Tadeu graduando o 3° semestre 
+                    em Ciência da Computação. Sou uma pessoa divertida, proativa, que 
+                    preza por um ambiênte legal e que gosta de desafios.
+                     </p>
+            </article>
+
+            <article id="habilidades">
+                <span class="icon-pushpin"></span>
+                <h4>Habilidades</h4>
+                
+                <div class="html">
+                <img src="/ProjetoAtualizado/images/html.png" alt="Logo do html" class="logo-html">
+                <h4>HTML5</h4>
+                <p>Tags, sintaxes, html semântico e atributos.</p>
+                </div>
+
+                <div class="css">
+                <img src="/ProjetoAtualizado/images/css.png" alt="Logo do css" class="logo-css">
+                <h4>CSS3</h4>
+                <p>Sintaxes, propriedades, classes e ids, flexbox, responsividade, pseudoclasses e pseudoelementos.</p>
+                </div>
+
+                <div class="java">
+                    <img src="/ProjetoAtualizado/images/java.png" alt="Logo do java" class="logo-java">
+                    <h4>JAVA</h4>
+                    <p>Classes, atributos, métodos, loops, desvios condicionais, CRUD com banco de dados e paradigma orientado a objetos.</p>
+                    </div>
+
+            </article>
+        </section>
+
+        <section id="projetos">
+
+            <!--Icon da sessão projetos-->
+            <span class="icon-clipboard"></span>
+            <h4 class="titulo-projetos">Projetos Pessoais</h4>
+
+            <!-- Apena uma parte informativa -->
+            <div class="projetos-informativo">
+            <span class="icon-display"></span>
+            <p>Para desktops</p>
+            
+            <span class="icon-mobile"></span>
+            <p>Para celulares</p>
+            </div>
+
+            <p id="subp-projetos">Um click no icone para mudar a imagem.</p>
+
+            <!-- Sessão de projetos -->
+            <article class="projeto-cyber">
+                <span class="icon-display"></span>
+                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/cyber.png" alt="Projeto de cybersegurança"></a>
+                <p>Projeto 1 - Cybersecurity.</p>
+                <a href="https://github.com/AndersonJader0/cyb-sec" target="_blank"><span class="icon-github"></span></a>
+            </article>
+
+            <article class="projeto-shoes">
+                <span class="icon-display"></span>
+                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/shoes.png" alt="Landing page de vendas de sapato"></img></a>
+                <p>Projeto 2 - Landing page de venda.</p>
+                <a href="https://github.com/AndersonJader0/ldp-shoes" target="_blank"><span class="icon-github"></span></a>
+            </article>
+
+            <article class="projeto-inovando">
+                <span class="icon-display"></span>
+                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/inovando.png" alt="Landing page de comunidade"></img></a>
+                <p>Projeto 3 - Landing page comunidade.</p>
+                <a href="https://github.com/AndersonJader0/Ldp-Inovando" target="_blank"><span class="icon-github"></span></a>
+            </article>
+
+            <article class="projeto-racsales">
+                <div>
+                <span class="icon-display" onclick="destrocar()" id="display-rac"></span>
+                <span class="icon-mobile" onclick="trocar()" onclick="aumentarImg()" id="mobile-rac"></span>
+                </div>
+                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/racsales.png" alt="Projeto Rac Sales" id="figura"></img></a>
+                <p>Projeto 4 - Racsales Responsivo.</p>
+                <a href="https://github.com/AndersonJader0/RacSales-Projeto" target="_blank"><span class="icon-github"></span></a>
+            </article>
+        </section>
+        </section>
+
+        <section id="contatos">
+            <span class="icon-phone"></span>
+            <h4>Contatos</h4>
+            <p>Estarei respondendo assim que puder.</p>
+            <div class="contatos-icons">
+                <a href="https://web.whatsapp.com/send?phone=13996356390" target="_blank"><span class="icon-whatsapp" title="Direciona para meu whatsapp"></span>
+                (13)996356390</a>
+                <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank"><span class="icon-linkedin" title="Direciona para meu linkedin"></span>
+                AndersonJader</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <h4>Desenvolvido por Anderson Jader</h4>
+    </footer>
+
+</body>
+</html>

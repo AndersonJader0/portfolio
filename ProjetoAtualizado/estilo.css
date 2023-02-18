@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+}
+
+/*  Technique MOBILE FIRST  */
+
+.cabeçalho{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Antonio";
+}
+
+/* Texto antes do menu */
+
+.container-first-text{
+    padding: 1.2em;
+    background-color: #111111;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.title{
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.sub-title{
+    background-color: #ebebeb;
+}
+
+/* Menu */
+
+.menu{
+    list-style: none;
+    text-transform: uppercase;
+    background-color:#111111;
+}
+
+.menu a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+.menu li{
+    padding: .7em;
+}
+
+.menu a:hover li{
+    background-color: #222;
+}
+
+/* Topo */
+
+.topo{
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.1)), url(../ProjetoAtualizado/images/topo-pq.jpg);
+    width: 100%;
+    height: 82vh;
+    background-position: top;
+    background-size: cover;
+    padding: 5em 2em 0em 2em;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.topo h3{
+    font-weight: 300;
+}
+
+ .topo-art1, .topo-art2{
+    color:#ebebeb;
+    background-color: #00000066;
+    margin-bottom: 8.7em;
+    padding: 1.5em;
+
+}
+
+.topo-art1 .icon-display, .topo-art2 .icon-briefcase{
+    display: block;
+    font-size: 3em;
+    padding-top: .3em;
+}
+
+.icon-arrow-down{
+    font-size: 3em;
+}
+
+/* Parte Principal */
+
+.principal{
+    margin-top: 10em;
+    font-family: "Roboto";
+    text-align: center;
+    padding: 1em;
+    font-weight: 200;
+    font-size: 1.3em;
+}
+
+/* SOBRE MIM */
+
+#sobre{
+    background-color: #e6e6e6;
+    padding: 1em;
+}
+
+.icon-newspaper{
+    font-size: 4em;
+    display: inline-block;
+    margin-bottom: .2em;
+}
+
+#sobre h4{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+#sobre p{
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 5em;
+}
+
+/* HABILIDADES */
+
+#habilidades span + h4{
+    text-transform: uppercase;
+}
+
+.icon-pushpin{
+    font-size: 4em;
+    display: inline-block;
+    margin-bottom: .2em;
+}
+
+/*HTML e CSS*/ 
+.logo-html, .logo-css{
+    width: 10em;
+    margin-top: 3em;
+}
+
+/* Java - Imagem possui tamanho diferente */
+.logo-java{
+    width: 9em;
+    margin-top: 3em;
+}
+
+.java p{
+    margin-bottom: 4em;
+}
+
+/* Meus projetos */
+
+#projetos{
+    background-color: #e6e6e6;
+}
+
+.icon-clipboard{
+    font-size: 4em;
+    display: inline-block;
+}
+
+#projetos h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.titulo-projetos{
+    font-family: "Roboto";
+    font-weight: 300;
+    color: black;
+    margin-bottom: 2em;
+}
+
+/* Parte informativa desktop e celulares */
+
+.projetos-informativo{
+    display: flex;
+    flex-direction: row;
+}
+
+#projetos .icon-display, .icon-mobile{
+    font-size: 3em;
+    margin: 1%;
+}
+
+#subp-projetos{
+    padding: 1em;
+    background: black;
+    font-family: "Antonio";
+    color: #ebebeb;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#projetos a{
+    color: black;
+}
+
+/* continuação da sessão projetos */
+
+#projetos img{
+    width: 100%;
+}
+
+#projetos article p{
+    font-size: 1em;
+    margin-bottom: 1em;
+    background-color: #000000;
+    color: white;
+    padding: 1em;
+    font-family: "antonio";
+    letter-spacing: 1.7;
+}
+
+.icon-github{
+    font-size: 3em;
+    display: inline-block;
+    margin-bottom: 1em;
+    transition: all .5s;
+}
+
+.icon-github:hover, #display-rac:hover, #mobile-rac:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+/* CONTATOS */
+
+#contatos h4{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.icon-phone{
+    font-size: 4em;
+}
+
+.contatos-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.icon-linkedin, .icon-whatsapp{
+    font-size: 3em;
+    transition: all .5s;
+}
+
+.contatos-icons a{
+    color: black;
+    transition: all .5s;
+}
+
+.contatos-icons a:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.contatos-icons a:hover .icon-whatsapp{
+    color: rgb(37, 211, 102);
+}
+
+.contatos-icons a:hover .icon-linkedin{
+    color: #0e76a8;
+}
+
+
+
+/* Rodape da página */
+
+.rodape{
+    padding: 2em;
+    color: white;
+    background-color:#111111;
+    font-family: "Antonio";
+    text-align: center;
+    letter-spacing: .1em;
+}
