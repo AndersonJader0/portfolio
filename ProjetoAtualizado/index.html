@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../ProjetoAtualizado/estilo.css">
     <link rel="stylesheet" href="../ProjetoAtualizado/icomoon/style.css">
-    <script src="../ProjetoAtualizado/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -43,15 +42,34 @@
     <main class="principal">
         <section class="principal-content">
             <section class="Sobre-e-habilidades">
-            <article id="sobre">
+            <article class="sobre">
                 <span class="icon-newspaper"></span>
                 <h4>Sobre mim</h4>
+                <div class="sobrecontent">
                 <p> Olá, me chamo Anderson Jader tenho 19 anos e estou atualmente 
                     estudando na Universidade São Judas Tadeu graduando o 3° semestre 
-                    em Ciência da Computação. Sou uma pessoa divertida, proativa, que 
-                    preza por um ambiênte legal e que gosta de desafios.
+                    em Ciência da Computação. Sou uma pessoa divertida, proativa, que
+                    aprende rápido, prezo por um ambiênte legal e gosto de desafios. <br> <br>
+                    Minha tragetória na programação começou no ensino médio quando conheci 
+                    o Curso em 
+                    Vídeo e Código Fonte no youtube, através desses canais conheci o 
+                    mundo dos desenvolvedores e logo isso me atraiu. <br> <br>
+                    Resolvi entrar na faculdade para ter um direcionamento melhor e 
+                    após ver linguagens como Java, Kotlin, C++, C# e outras áreas 
+                    descobri ainda esse ano que na verdade onde eu realmente quero 
+                    seguir é na área web. <br> <br>
+                    Estou dando meus primeiros passos estudando 
+                    HTML, CSS e Javascript com o curso da 
+                    serfrontend na Udemy e treinamentos/vídeos aulas no YouTube onde 
+                    já consegui uma boa base de conhecimento. <br> <br> 
+                    Hoje busco uma 
+                    oportunidade de estagiar na área como desenvolvedor Front-end.
                      </p>
+                    </div>
+
+                     <button id="readmore-button">Ler mais.</button>
             </article>
+            
 
             <article id="habilidades">
                 <span class="icon-pushpin"></span>
@@ -98,14 +116,14 @@
             <!-- Sessão de projetos -->
             <article class="projeto-cyber">
                 <span class="icon-display"></span>
-                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/cyber.png" alt="Projeto de cybersegurança"></a>
+                <a href="#" target="_blank"><img src="../ProjetoAtualizado/images/cyber.png" alt="Projeto de cybersegurança"></a>
                 <p>Projeto 1 - Cybersecurity.</p>
                 <a href="https://github.com/AndersonJader0/cyb-sec" target="_blank"><span class="icon-github"></span></a>
             </article>
 
             <article class="projeto-shoes">
                 <span class="icon-display"></span>
-                <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/shoes.png" alt="Landing page de vendas de sapato"></img></a>
+                <a href="#" target="_blank"><img src="../ProjetoAtualizado/images/shoes.png" alt="Landing page de vendas de sapato"></img></a>
                 <p>Projeto 2 - Landing page de venda.</p>
                 <a href="https://github.com/AndersonJader0/ldp-shoes" target="_blank"><span class="icon-github"></span></a>
             </article>
@@ -120,7 +138,7 @@
             <article class="projeto-racsales">
                 <div>
                 <span class="icon-display" onclick="destrocar()" id="display-rac"></span>
-                <span class="icon-mobile" onclick="trocar()" onclick="aumentarImg()" id="mobile-rac"></span>
+                <span class="icon-mobile" onclick="trocar()" id="mobile-rac"></span>
                 </div>
                 <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/racsales.png" alt="Projeto Rac Sales" id="figura"></img></a>
                 <p>Projeto 4 - Racsales Responsivo.</p>
@@ -146,5 +164,8 @@
         <h4>Desenvolvido por Anderson Jader</h4>
     </footer>
 
+    <script src="/ProjetoAtualizado/script.js"></script>
+
 </body>
+
 </html>
