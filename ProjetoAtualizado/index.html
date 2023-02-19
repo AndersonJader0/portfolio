@@ -18,7 +18,7 @@
         <h2 class="sub-title">Desenvolvedor Front-end</h2>
         </div>
         <nav class="menu">
-            <a href="#sobre" title="Campo sobre mim"><li>Sobre mim</li></a>
+            <a href="#sobre-e-habilidades" title="Campo sobre mim"><li>Sobre mim</li></a>
             <a href="#habilidades" title="Campo sobre minhas habilidades"><li>Habilidades</li></a>
             <a href="#projetos" title="Campo sobre meus projetos"><li>Projetos</li></a>
             <a href="#contatos" title="Campo dos meus contatos"><li>Contato</li></a>
@@ -27,12 +27,12 @@
 
     <section class="topo">
     <article class="topo-art1">
-        <h3>Um desenvolvedor apaixonado por solucionar problemas voltados a web.</h3>
+        <h3 id="text1"></h3>
         <span class="icon-display"></span>
     </article>
 
     <article class="topo-art2">
-        <h3>Em busca de uma oportunidade de estágio.</h3>
+        <h3 id="text2"></h3>
         <span class="icon-briefcase"></span>
     </article>
 
@@ -41,7 +41,7 @@
 
     <main class="principal">
         <section class="principal-content">
-            <section class="Sobre-e-habilidades">
+            <section id="sobre-e-habilidades">
             <article class="sobre">
                 <span class="icon-newspaper"></span>
                 <h4>Sobre mim</h4>
@@ -64,6 +64,8 @@
                     já consegui uma boa base de conhecimento. <br> <br> 
                     Hoje busco uma 
                     oportunidade de estagiar na área como desenvolvedor Front-end.
+
+                    <img src="/ProjetoAtualizado/images/programming.svg" alt="Imagem de aprendiz animado" width="100%">
                      </p>
                     </div>
 
@@ -72,27 +74,33 @@
             
 
             <article id="habilidades">
+                
                 <span class="icon-pushpin"></span>
                 <h4>Habilidades</h4>
                 
+                <article class="habilidades-content">
                 <div class="html">
                 <img src="/ProjetoAtualizado/images/html.png" alt="Logo do html" class="logo-html">
-                <h4>HTML5</h4>
-                <p>Tags, sintaxes, html semântico e atributos.</p>
                 </div>
 
                 <div class="css">
                 <img src="/ProjetoAtualizado/images/css.png" alt="Logo do css" class="logo-css">
-                <h4>CSS3</h4>
-                <p>Sintaxes, propriedades, classes e ids, flexbox, responsividade, pseudoclasses e pseudoelementos.</p>
+                </div>
+
+                <div class="javascript">
+                    <img src="/ProjetoAtualizado/images/javascript.png" alt="Logo do javascript" class="logo-javascript">
                 </div>
 
                 <div class="java">
-                    <img src="/ProjetoAtualizado/images/java.png" alt="Logo do java" class="logo-java">
-                    <h4>JAVA</h4>
-                    <p>Classes, atributos, métodos, loops, desvios condicionais, CRUD com banco de dados e paradigma orientado a objetos.</p>
-                    </div>
+                <img src="/ProjetoAtualizado/images/java.png" alt="Logo do java" class="logo-java">
+                </div>
 
+                <div class="usa">
+                <img src="/ProjetoAtualizado/images/usa.png" alt="Logo do usa" class="logo-usa">
+                </div>
+                </article>
+
+                <p>Estudando a pouco tempo Javascript.</p>
             </article>
         </section>
 
@@ -111,7 +119,10 @@
             <p>Para celulares</p>
             </div>
 
-            <p id="subp-projetos">Um click no icone para mudar a imagem.</p>
+            <p id="subp-projetos">Um click no icone do celular para mudar a imagem e no desktop para voltar.</p>
+
+            <img src="/ProjetoAtualizado/images/developer.svg" alt="Desenho de programador">
+            <p id="subp2-projetos">Todos os projetos possuem um repositório no Github, um click em seu icone o redireciona.</p>
 
             <!-- Sessão de projetos -->
             <article class="projeto-cyber">
@@ -142,25 +153,35 @@
                 </div>
                 <a href="#" target="_blank"><img src="/ProjetoAtualizado/images/racsales.png" alt="Projeto Rac Sales" id="figura"></img></a>
                 <p>Projeto 4 - Racsales Responsivo.</p>
-                <a href="https://github.com/AndersonJader0/RacSales-Projeto" target="_blank"><span class="icon-github"></span></a>
+                <a href="https://github.com/AndersonJader0/RacSales-Projeto" target="_blank"><span class="icon-github" id="icon4-github"></span></a>
             </article>
         </section>
         </section>
 
         <section id="contatos">
-            <span class="icon-phone"></span>
+            <img src="/ProjetoAtualizado/images/Message.svg"  alt="Desenho de um homem com seus contatos" width="100%">
+            <!-- <span class="icon-phone"></span> -->
             <h4>Contatos</h4>
-            <p>Estarei respondendo assim que puder.</p>
+            <p>Está procurando por um solucionador de problemas apaixonado pelo que faz? Entre em contato.</p>
             <div class="contatos-icons">
                 <a href="https://web.whatsapp.com/send?phone=13996356390" target="_blank"><span class="icon-whatsapp" title="Direciona para meu whatsapp"></span>
-                (13)996356390</a>
+                (13)996356390.</a>
                 <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank"><span class="icon-linkedin" title="Direciona para meu linkedin"></span>
-                AndersonJader</a>
+                AndersonJader.</a>
             </div>
         </section>
     </main>
 
     <footer class="rodape">
+        
+        <h5>Atribuições</h5>
+        <div class="atribuicoes">
+        <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/usa" title="usa icons">Usa icons created by Freepik - Flaticon</a></p>
+        </div>
         <h4>Desenvolvido por Anderson Jader</h4>
     </footer>
 

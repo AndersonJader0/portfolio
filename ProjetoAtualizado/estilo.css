@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #ebebeb;
 }
@@ -21,7 +25,7 @@ body{
 
 .container-first-text{
     padding: 1.2em;
-    background-color: #111111;
+    background-color: #222;
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -31,7 +35,9 @@ body{
 }
 
 .sub-title{
-    background-color: #ebebeb;
+    color: #222;
+    background-color: #e6e6e6;
+    padding: .2em;
 }
 
 /* Menu */
@@ -39,7 +45,7 @@ body{
 .menu{
     list-style: none;
     text-transform: uppercase;
-    background-color:#111111;
+    background-color:#222;
 }
 
 .menu a{
@@ -53,7 +59,7 @@ body{
 }
 
 .menu a:hover li{
-    background-color: #222;
+    background-color: #333;
 }
 
 /* Topo */
@@ -73,7 +79,7 @@ body{
     font-weight: 300;
 }
 
- .topo-art1, .topo-art2{
+.topo-art1, .topo-art2{
     color:#ebebeb;
     background-color: #00000066;
     margin-top: 0em;
@@ -92,6 +98,7 @@ body{
     font-size: 3em;
     display: block;
     margin-top: 4em;
+    color: #222;
 }
 
 /* Parte Principal */
@@ -100,7 +107,7 @@ body{
     margin-top: 10em;
     font-family: "Roboto";
     text-align: center;
-    padding: 1em;
+    padding: .5em;
     font-weight: 200;
     font-size: 1.3em;
 }
@@ -118,12 +125,14 @@ body{
     font-size: 4em;
     display: inline-block;
     margin-bottom: .2em;
+    color: #222;
 }
 
 .sobre h4{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: .5em;
+    color: #222;
 }
 
 .sobre::before{
@@ -132,8 +141,8 @@ body{
     right: 0;
     position: absolute;
     border: 30px solid transparent;
-    border-top: 30px solid rgb(37, 211, 102);
-    border-right: 30px solid rgb(37, 211, 102);
+    border-top: 30px solid #222;
+    border-right: 30px solid #222;
 
 }
 
@@ -167,8 +176,8 @@ body{
     display: block;
     margin: auto;
     border-radius: 3px;
-    background-color: rgb(37, 211, 102);
-    color: #000000;
+    background-color: #222;
+    color: white;
     border: none;
     font-size: .8em;
     font-weight: 350;
@@ -179,7 +188,7 @@ body{
 #readmore-button:hover{
     cursor: pointer;
     background: transparent;
-    color: rgb(37, 211, 102);
+    color: #111111;
 }
 
 
@@ -191,55 +200,71 @@ body{
 
 /* HABILIDADES */
 
+#habilidades{
+    background-color:#e6e6e6;
+    box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.habilidades-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
 #habilidades span + h4{
     text-transform: uppercase;
+    color: #222;
 }
 
 .icon-pushpin{
     font-size: 4em;
     display: inline-block;
     margin-bottom: .2em;
-    margin-top: 1em;
+    margin-top: .45em;
+    color: #222;
 }
 
-/*HTML e CSS*/ 
-.logo-html, .logo-css{
-    width: 10em;
+/* Icons */ 
+.logo-html, .logo-css, .logo-java, .logo-javascript, .logo-usa{
+    width: 5.5em;
     margin-top: 3em;
 }
 
-/* Java - Imagem possui tamanho diferente */
-.logo-java{
-    width: 9em;
-    margin-top: 3em;
-}
-
-.java p{
-    margin-bottom: 4em;
+#habilidades p{
+    border-left: 1px solid #222;
+    display: inline-block;
+    margin-bottom: 3em;
+    background-color:rgba(10, 10, 10, .1);
+    padding: .5em;
 }
 
 /* Meus projetos */
 
 #projetos{
     background-color: #e6e6e6;
+    box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
+    margin-bottom: 3em;
+    padding-top: 1em;
 }
 
 .icon-clipboard{
     font-size: 4em;
     display: inline-block;
-}
-
-#projetos h4{
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 1em;
+    color: #222;
 }
 
 .titulo-projetos{
     font-family: "Roboto";
     font-weight: 300;
-    color: black;
+    color: #222;
     margin-bottom: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 1em;
 }
 
 /* Parte informativa desktop e celulares */
@@ -247,14 +272,28 @@ body{
 .projetos-informativo{
     display: flex;
     flex-direction: row;
+    color: #222;
+}
+
+.projetos-informativo p{
+    display: flex;
+    align-self:center;
 }
 
 #projetos .icon-display, .icon-mobile{
     font-size: 3em;
     margin: 1%;
+    margin-top: .5em;
     display: inline-block;
     animation: float 5s ease-in-out infinite;
+    color: #222;
 }
+
+.projeto-cyber, .projeto-shoes, .projeto-inovando, .projeto-racsales{
+    border-top: 1px solid #222;
+}
+
+/* Animação flutuando */
 
 @keyframes float{
     0%{
@@ -269,9 +308,9 @@ body{
     }
 }
 
-#subp-projetos{
+#subp-projetos, #subp2-projetos{
     padding: 1em;
-    background: black;
+    background: #222;
     font-family: "Antonio";
     color: #ebebeb;
     margin-top: 1em;
@@ -279,7 +318,7 @@ body{
 }
 
 #projetos a{
-    color: black;
+    color: #222;
 }
 
 /* continuação da sessão projetos */
@@ -291,7 +330,7 @@ body{
 #projetos article p{
     font-size: 1em;
     margin-bottom: 1em;
-    background-color: #000000;
+    background-color: #222;
     color: white;
     padding: 1em;
     font-family: "antonio";
@@ -303,6 +342,11 @@ body{
     display: inline-block;
     margin-bottom: 1em;
     transition: all .5s;
+    color: #222;
+}
+
+#icon4-github{
+    margin-bottom: .5em;
 }
 
 .icon-github:hover, #display-rac:hover, #mobile-rac:hover{
@@ -312,14 +356,31 @@ body{
 
 /* CONTATOS */
 
+#contatos{
+    background-color:#e6e6e6;
+    box-shadow: 8px 8px 8px rgba(4, 3, 4, .3);
+    margin-bottom: 1em;
+}
+
 #contatos h4{
     text-transform: uppercase;
     font-weight: bold;
+    background-color: rgba(10, 10, 10, .1);
+    border-left: 2px solid #222;
+    color: #222;
+    border-top-left-radius: 10px;
 }
 
-.icon-phone{
-    font-size: 4em;
+#contatos p{
+    background-color: rgba(10, 10, 10, .1);
+    border-left: 2px solid #222;
+    color: #222;
 }
+
+/* 
+.icon-phone{
+    font-size: 1em;
+} */
 
 .contatos-icons{
     display: flex;
@@ -327,16 +388,29 @@ body{
     align-items: center;
     justify-content: space-around;
     margin-top: 2em;
+    color: #222;
 }
 
 .icon-linkedin, .icon-whatsapp{
     font-size: 3em;
     transition: all .5s;
+    display: inline-block;
 }
 
-.contatos-icons a{
-    color: black;
+.icon-linkedin{
+    color: #0e76a8;
+}
+
+.icon-whatsapp{
+    color: rgb(37, 211, 102);
+}
+
+#contatos a{
+    color: #222;
     transition: all .5s;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1.5em;
 }
 
 .contatos-icons a:hover{
@@ -344,23 +418,46 @@ body{
     cursor: pointer;
 }
 
-.contatos-icons a:hover .icon-whatsapp{
-    color: rgb(37, 211, 102);
-}
-
-.contatos-icons a:hover .icon-linkedin{
-    color: #0e76a8;
-}
-
-
-
 /* Rodape da página */
 
 .rodape{
     padding: 2em;
-    color: white;
-    background-color:#111111;
+    color: #ebebeb;
+    background-color:#222;
     font-family: "Antonio";
-    text-align: center;
     letter-spacing: .1em;
+    margin: auto;
+}
+
+.rodape h4{
+    text-align: center;
+    font-size: 1.5em;
+    background: #c0c0c0;
+    color:#222;
+    padding: .3em;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.atribuicoes{
+    margin-bottom: 1em;
+}
+
+.rodape h5{
+    margin-bottom: 1em;
+    font-size: 1em;
+    text-align: center;
+    background: #c0c0c0;
+    color: #222;
+    padding: .3em;
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
+.rodape a{
+    color: #ebebeb;
+    font-family: "Roboto";
+    font-weight: 200;
+    text-decoration: none;
+    text-align: justify;
 }
