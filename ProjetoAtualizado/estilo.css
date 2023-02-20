@@ -25,7 +25,7 @@ body{
 
 .container-first-text{
     padding: 1.2em;
-    background-color: #222;
+    background-color: #14222d;
     border-bottom: 1px solid #ebebeb;
 }
 
@@ -45,7 +45,7 @@ body{
 .menu{
     list-style: none;
     text-transform: uppercase;
-    background-color:#222;
+    background-color:#14222d;
 }
 
 .menu a{
@@ -59,7 +59,7 @@ body{
 }
 
 .menu a:hover li{
-    background-color: #333;
+    background-color: #2a4057;
 }
 
 /* Topo */
@@ -81,7 +81,7 @@ body{
 
 .topo-art1{
     color:#ebebeb;
-    background-color: rgba(10, 10, 10, .3);
+    background-color: rgba(21,35,46,.4);
     margin-top: 0em;
     margin-bottom: 3em;
     padding: 1.5em;
@@ -115,7 +115,7 @@ body{
 /* SOBRE MIM */
 
 .sobre{
-    background-color: #e6e6e6;
+    background-color: #f0f0f0;
     padding: 1em;
     box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
     position: relative;
@@ -125,14 +125,14 @@ body{
     font-size: 4em;
     display: inline-block;
     margin-bottom: .2em;
-    color: #222;
+    color: #14222d;
 }
 
 .sobre h4{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: .5em;
-    color: #222;
+    color: #14222d;
 }
 
 .sobre::before{
@@ -141,8 +141,8 @@ body{
     right: 0;
     position: absolute;
     border: 30px solid transparent;
-    border-top: 30px solid #222;
-    border-right: 30px solid #222;
+    border-top: 30px solid #14222d;
+    border-right: 30px solid #14222d;
 
 }
 
@@ -159,7 +159,7 @@ body{
     width: 100%;
     height: 100px;
     display: block;
-    background: linear-gradient(transparent, #e6e6e6);
+    background: linear-gradient(transparent, #f0f0f0);
 }
 
 .sobre.active .sobrecontent{
@@ -176,8 +176,8 @@ body{
     display: block;
     margin: auto;
     border-radius: 3px;
-    background-color: #222;
-    color: white;
+    background-color: #14222d;
+    color: #e6e6e6;
     border: none;
     font-size: .8em;
     font-weight: 350;
@@ -201,10 +201,11 @@ body{
 /* HABILIDADES */
 
 #habilidades{
-    background-color:#e6e6e6;
+    background-color:#f0f0f0;
     box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
     margin-bottom: 3em;
     margin-top: 1em;
+    border-radius: 3px;
 }
 
 .habilidades-content{
@@ -217,7 +218,7 @@ body{
 
 #habilidades span + h4{
     text-transform: uppercase;
-    color: #222;
+    color: #14222d;
 }
 
 .icon-pushpin{
@@ -225,7 +226,7 @@ body{
     display: inline-block;
     margin-bottom: .2em;
     margin-top: .45em;
-    color: #222;
+    color: #14222d;
 }
 
 /* Icons */ 
@@ -245,22 +246,27 @@ body{
 /* Meus projetos */
 
 #projetos{
-    background-color: #e6e6e6;
-    box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
     margin-bottom: 3em;
     padding-top: 1em;
+}
+
+.projeto-cyber, .projeto-shoes, .projeto-inovando, .projeto-racsales{
+    background-color:#f0f0f0;
+    box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
+    margin-bottom: 3em;
+    border-radius: 4px;
 }
 
 .icon-clipboard{
     font-size: 4em;
     display: inline-block;
-    color: #222;
+    color: #14222d;
 }
 
 .titulo-projetos{
     font-family: "Roboto";
     font-weight: 300;
-    color: #222;
+    color: #14222d;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-weight: bold;
@@ -270,6 +276,7 @@ body{
 /* Parte informativa desktop e celulares */
 
 .projetos-informativo{
+    background-color:#f0f0f0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -285,14 +292,8 @@ body{
     font-size: 3em;
     margin: 1%;
     margin-top: .5em;
-    display: flex;
-    justify-content: center;
     animation: float 5s ease-in-out infinite;
-    color: #222;
-}
-
-.projeto-cyber, .projeto-shoes, .projeto-inovando, .projeto-racsales{
-    border-top: 1px solid #222;
+    color: #14222d;
 }
 
 /* Animação flutuando */
@@ -302,7 +303,7 @@ body{
         transform: translateY(0px);
     }
     50%{
-        transform: translatey(-10px);
+        transform: translatey(-5px);
     }
 
     100%{
@@ -312,7 +313,7 @@ body{
 
 #subp-projetos, #subp2-projetos{
     padding: 1em;
-    background: #222;
+    background: #14222d;
     font-family: "Antonio";
     color: #ebebeb;
     margin-top: 1em;
@@ -326,13 +327,13 @@ body{
 /* continuação da sessão projetos */
 
 #projetos img{
-    width: 400px;
+    width: 100%;
 }
 
 #projetos article p{
     font-size: 1em;
-    margin-bottom: 1em;
-    background-color: #222;
+    margin-bottom: .3em;
+    background-color: #14222d;
     color: white;
     padding: 1em;
     font-family: "antonio";
@@ -342,7 +343,7 @@ body{
 .icon-github{
     font-size: 3em;
     display: inline-block;
-    margin-bottom: 1em;
+    margin-bottom: .3em;
     transition: all .5s;
     color: #222;
 }
@@ -356,33 +357,58 @@ body{
     cursor: pointer;
 }
 
+/* Certificações */
+
+.certificacoes{
+    font-family: "Roboto";
+    background-color:#f0f0f0;
+    font-weight: 300;
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, .3);
+    margin-bottom: 3em;
+}
+
+.certificacoes h4{
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 1em;
+}
+
+.certificacoes a{
+    background-color: #0e76a8;
+    padding: 1em;
+    display: inline-block;
+    text-decoration: none;
+    color:#ebebeb;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.certificacoes a:hover{
+    background-color: #1292cd;
+}
+
 /* CONTATOS */
 
 #contatos{
-    background-color:#e6e6e6;
+    background-color: #f0f0f0;
     box-shadow: 8px 8px 8px rgba(4, 3, 4, .3);
     margin-bottom: 1em;
 }
 
 #contatos h4{
     text-transform: uppercase;
-    font-weight: bold;
-    background-color: rgba(10, 10, 10, .1);
-    border-right: 1px solid #222;
+    padding: 1em;
+    font-weight: 400;
+    background-color: #f0f0f0;
     color: #222;
 }
 
 #contatos p{
-    background-color: rgba(10, 10, 10, .1);
-    border-right: 1px solid #222;
+    background-color: #f0f0f0;
     color: #222;
-    padding: 1em;
+    padding: 0 .7em .7em .7em;
+    border-bottom: 1px solid #222;
 }
-
-/* 
-.icon-phone{
-    font-size: 1em;
-} */
 
 .contatos-icons{
     display: flex;
@@ -424,8 +450,8 @@ body{
 
 .rodape{
     padding: 2em;
-    color: #ebebeb;
-    background-color:#222;
+    color: #14222d;
+    background-color:#ddd;
     font-family: "Antonio";
     letter-spacing: .1em;
     margin: auto;
@@ -434,8 +460,8 @@ body{
 .rodape h4{
     text-align: center;
     font-size: 1.5em;
-    background: #c0c0c0;
-    color:#222;
+    background: #14222d;
+    color:#f0f0f0;
     padding: .3em;
     font-family: "Roboto";
     font-weight: 300;
@@ -449,15 +475,15 @@ body{
     margin-bottom: 1em;
     font-size: 1em;
     text-align: center;
-    background: #c0c0c0;
-    color: #222;
+    background: #14222d;
+    color: #f0f0f0;
     padding: .3em;
     font-family: "Roboto";
     font-weight: 300;
 }
 
 .rodape a{
-    color: #ebebeb;
+    color: #14222d;
     font-family: "Roboto";
     font-weight: 200;
     text-decoration: none;
