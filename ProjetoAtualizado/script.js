@@ -29,9 +29,9 @@ button.addEventListener('click', function() {
      button.textContent = 'Ler mais';
 });
 
-const elemento = document.querySelector("#text1");
+const elemento = document.querySelector("#text");
 const texto = "Um desenvolvedor apaixonado por solucionar problemas voltados a web.";
-const intervalo = 100;
+const intervalo = 50;
 
 function showText(elemento, texto, intervalo){
 
@@ -39,7 +39,7 @@ function showText(elemento, texto, intervalo){
 
     const typer = setInterval(() => {
         if(!char.length) {
-            return clearIntervalo(typer);
+            return clearInterval(typer);
         }
 
         const next = char.pop();
@@ -50,26 +50,3 @@ function showText(elemento, texto, intervalo){
 }
 
 showText(elemento, texto, intervalo);
-
-const elemento2 = document.querySelector("#text2");
-const texto2 = "Em busca de uma oportunidade de estágio.";
-var intervalo2 = 100;
-
-function showText2(elemento2, texto2, intervalo2){
-
-    const char = texto2.split("").reverse();
-
-    const typer = setInterval(() => {
-        
-        if(!char.length) {
-            return clearIntervalo(typer);
-        }
-
-        const next = char.pop();
-
-        elemento2.innerHTML += next;
-
-    }, intervalo2);
-}
-
-showText2(elemento2, texto2, intervalo2);
