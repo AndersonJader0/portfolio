@@ -1,147 +1,199 @@
-</body>
-</html>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Anderson Jader">
-    <meta name="description" content="Meu portfólio Anderson Jader, contém meus projetos, aborda meus conhecimentos e tem meus contatos.">
-    <meta name="keywords" content="portfólio, programador, projetos, css, html.">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="stylesheet" href="/icomoon/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Cabin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <title>Portfólio</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Cabin&display=swap');
-
-    </style>
-
-    
 </head>
 <body>
-    <nav id="menu">
-        <ul>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contatos">Contatos</a></li>
-            <li><a href="https://github.com/AndersonJader0" target="_blank">Github</a></li>
-        </ul>
-    </nav>
-
-    <header id="topo">
-        <h1>Anderson Jader <br>
-        <span>Desenvolvedor Front-end.</span></h1>
-        <p>Desenvolver códigos é minha paixão, busco sempre ser a minha melhor versão no que amo
-            para poder desenvolver os melhores códigos e solucionar maiores problemas na web.
-        </p>
-        <source media="(max-width: 768px)" srcset="/img/background-topo.jpg">
-        <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank" title="" class="button">Saber mais</a>
+    <header class="cabeçalho">
+        <div class="container-first-text">
+        <h1 class="title">Anderson Jader</h1>
+        <h2 class="sub-title">Desenvolvedor Front-end</h2>
+        </div>
+        <nav class="menu">
+            <a href="#sobre-e-habilidades" title="Campo sobre mim"><li>Sobre mim</li></a>
+            <a href="#habilidades" title="Campo sobre minhas habilidades"><li>Habilidades</li></a>
+            <a href="#projetos" title="Campo sobre meus projetos"><li>Projetos</li></a>
+            <a href="#contatos" title="Campo dos meus contatos"><li>Contato</li></a>
+        </nav>
     </header>
 
-    <a href="#menu" id="seta-topo">&#9650;</a>
+    <section class="topo">
+    <article class="topo-art1">
+        <h3 id="text"></h3>
+        <span class="icon-display"></span>
+    </article>
 
-    <section id="habilidades">
-        <div id="h2habilidades">
-        <h2>Habilidades</h2>
-        </div>
-        <div id="geral-habilidades">
-
-        <div>
-            <img src="/img/html.png" alt="logo html" width="40%" class="logo">
-            <h3>HTML</h3>
-            <p>Tags, sintaxe, html semântico e atributos.</p>
-            
-        </div>
-
-        <div>
-            <img src="/img/css.png" alt="logo css" width="40%" class="logo">
-            <h3>CSS</h3>
-            <p>Sintaxe, propriedades, classes e ids, flexbox, responsividade, pseudoclasses e pseudoelementos.</p>
-            
-        </div>
-
-        <div>
-            <img src="/img/javaicon2.png" alt="logo java" width="38%" class="logo3">
-            <h3>JAVA</h3>
-            <p>Classes, atributos, métodos, loops, desvios condicionais, CRUD com banco de dados, paradigma orientado a objetos.</p>
-            
-        </div>
-        </div>
-
-        <p class="aprimorar">Busco me aprimorar mais após construir uma base sólida de HTML e CSS, estudando Javascript e logo após React.</p>
+    <img src="/images/startup-life.svg" width="100%" class="undraw-topo">
 
     </section>
 
-    <section id="projetos">
+    <main class="principal">
+        <section class="principal-content">
+            <section id="sobre-e-habilidades">
+            <article class="sobre">
+                <span class="icon-newspaper"></span>
+                <h4>Sobre mim</h4>
+                <div class="sobrecontent">
+                <p> 
+                    Olá, me chamo Anderson Jader, tenho 19 anos e resido no Guarujá. Sou uma pessoa que ama desafios, tenho fácil aprendizagem, sou proativo e persistente.
+                    Nas minhas horas de lazer sempre estou em busca de mais conhecimentos, seja pela internet, livros ou grupos de programação. <br> <br>
+                    
+                    Sobre a minha trajetória nos estudos de programação computacional. <br> <br>
+                    
+                    Se deu início no ensino médio, quando conheci o Curso em Vídeo e Código Fonte no youtube, através desses canais conheci o mundo dos desenvolvedores e logo isso me atraiu. Por este motivo ingressei na Universidade São Judas Tadeu na qual estou cursando o 3° semestre em Ciência da Computação. 
+                    Pois assim iria ter um direcionamento melhor e após adquirir um maior conhecimento com as linguagens de programação como Java, Kotlin, C++, C# e outras áreas de tecnologia. <br> <br>
+                    
+                    
+                    Me descobri como desenvolvedor front-end, estou dando meus primeiros passos nessa área, possuo conhecimentos fundamentais da linguagem de marcação de hipertexto HTML e Linguagem de folhas de estilo CSS para a construção de um alicerce sólido.  Atualmente estou estudando Javascript com o curso da serfrontend presente na plataforma Udemy e treinamentos no YouTube.  <br> <br>
+                    
+                    Hoje busco uma oportunidade de estagiar na área como desenvolvedor Front-end. Tenho muito a contribuir e aprender com a empresa. <br> <br>
 
-        <h2>Projetos</h2>
-        <p class="subtitulo-projetos">Desenvolvidos em ordem cronológica</p>
+                    <img src="/images/staticwebsite.svg" alt="Imagem de aprendiz animado" width="100%">
+                     </p>
+                    </div>
 
-        <div id="card-projetos">
-        <a href="https://glittery-sopapillas-dbc47d.netlify.app/" target="_blank"><img src="/img/cyb-sec.png" alt="Projeto cybersecurity"></a>
-        <a href="https://lambent-cobbler-70a5aa.netlify.app/" target="_blank"><img src="/img/ldp-shoes.png" alt="Projeto sapatos"></a>
-        <a href="https://statuesque-ganache-a41f8b.netlify.app/" target="_blank"><img src="/img/ldp-inovando.png" alt="Projeto inovando"></a>
-        <a href="https://luminous-longma-fff54b.netlify.app/" target="_blank"><img src="img/RacSales.png" alt="Projeto RacSales"></a>
-        </div>
+                     <button id="readmore-button">Ler mais.</button>
+            </article>
+            
 
-        <div id="projetos-nomes">
-            <p>Projeto 1 - Cybersecurity. <br>
-                Para desktop.
-            </p>
-            <p>Projeto 2 - Landing page  - tenis. <br>
-                Para desktop.
-            </p>
-            <p>Projeto 3 - Landing page - inovando. <br>
-                Para desktop.
-            </p>
+            <article id="habilidades">
+                
+                <span class="icon-pushpin"></span>
+                <h4>Habilidades</h4>
+                
+                <article class="habilidades-content">
+                <div class="html">
+                <img src="/images/html.png" alt="Logo do html" class="logo-html">
+                </div>
 
-            <p>
-                Projeto 4 - Rac Sales<br>
-                Para desktop e celulares.
-            </p>
-        </div>
+                <div class="css">
+                <img src="/images/css.png" alt="Logo do css" class="logo-css">
+                </div>
 
-        <div id="logogithub">
-            <a href="https://github.com/AndersonJader0/cyb-sec" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://github.com/AndersonJader0/ldp-shoes" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://github.com/AndersonJader0/Ldp-Inovando" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://github.com/AndersonJader0/RacSales-Projeto" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
+                <div class="javascript">
+                    <img src="/images/javascript.png" alt="Logo do javascript" class="logo-javascript">
+                </div>
+
+                <div class="java">
+                <img src="/images/java.png" alt="Logo do java" class="logo-java">
+                </div>
+
+                <div class="usa">
+                <img src="/images/usa.png" alt="Logo do usa" class="logo-usa">
+                </div>
+                </article>
+
+                <p>Estudando a pouco tempo Javascript.</p>
+            </article>
+        </section>
+
+        <section id="projetos">
+
+            <!--Icon da sessão projetos-->
+            <span class="icon-clipboard"></span>
+            <h4 class="titulo-projetos">Projetos Pessoais</h4>
+            
+            <div class="agrupamento-informativos">
+            <div class="projetos-informativo0">
+            <img src="/images/taksdone.svg" width="50%">
+            </div>
+            <!-- Apena uma parte informativa -->
+            <div class="projetos-informativo">
+            
+            <span class="icon-display"></span>
+            <p>Para desktops</p>
+            
+            <span class="icon-mobile"></span>
+            <p>Para celulares</p>
+            <p id="subp-projetos">Um click no icone do celular para mudar a imagem e no desktop para voltar.</p>
+            </div>
+            </div>
+
+            <div class="projetos-projetos">
+            <article class="projeto-racsales">
+                    <p>Projeto - Racsales Responsivo (AJ).</p>
+                <a href="#" target="_blank"><img src="/images/racsales.png" alt="Projeto Rac Sales" id="figura" class="img-projetos"></img></a>
+                <div class="icons-trocaimg">
+                <span class="icon-display" onclick="destrocar()" id="display-rac"></span>
+
+                <span class="icon-mobile" onclick="trocar()" id="mobile-rac"></span>
+                </div>
+                <a href="https://github.com/AndersonJader0/RacSales-Projeto" target="_blank"><span class="icon-github" id="icon4-github" ></span></a>
+            </article>
+
+            <article class="projeto-andamento">
+                <p>Projeto - Em andamento.</p>
+                <div class="em-andamento">
+                <a href="#" target="_blank"><img src="/images/emandamento.png" alt="Landing page de comunidade" class="img-projetos"></img></a>
+                </div>
+                <div class="icons-trocaimg">
+                <span class="icon-display"></span>
+                <span class="icon-mobile"></span>
+                </div>
+                <a href="#" target="_blank"><span class="icon-github"></span></a>
+            </article>
+            </div>
+        </section>
+        </section>
+
+        <section class="certificacoes">
+            <h4>Certificações</h4>
+            <div class="certificacao">
+            <div class="certificado-ingles">
+            <img src="/images/usa.png" width="10%">
+            <p>Inglês</p>
+            <a href="" download="" title="Concluído">Download</a>
+            </div>
+
+            <div class="certificado-frontend">
+                <img src="/images/ui-design.png" width="10%">
+                <p>Front-end <br>
+                (Em andamento)</p>
+                <a href="" download="" title="Em andamento">Download</a>
+            </div>
+            </div>
+        </section>
+
+        <section id="contatos">
+            <img src="/images/Message.svg"  alt="Desenho de um homem com seus contatos" width="100%">
+            <!-- <span class="icon-phone"></span> -->
+            <h4>Contatos</h4>
+            <p>Está procurando por um solucionador de problemas apaixonado pelo que faz? Entre em contato.</p>
+            <div class="contatos-icons">
+                <a href="https://web.whatsapp.com/send?phone=13996356390" target="_blank"><span class="icon-whatsapp" title="Direciona para meu whatsapp"></span>
+                (13)996356390.</a>
+                <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank"><span class="icon-linkedin" title="Direciona para meu linkedin"></span>
+                AndersonJader.</a>
+            </div>
+        </section>
+
         
-    </section>
+    </main>
 
-    <section id="contatos">
-        <h2>Contatos</h2>
-        <p>Estarei respondendo assim que puder.</p>
-
-        <div>
-        <div>
-            <a href="tel:(13) 996356390"><i class="fa-solid fa-phone"></i></a>
-            <p><a href="tel:(13) 996356390">(13) 996356390</a></p>
+    <footer class="rodape">
+        
+        <h5>Atribuições</h5>
+        <div class="atribuicoes">
+        <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a></p>
+        <p><a href="https://www.flaticon.com/free-icons/usa" title="usa icons">Usa icons created by Freepik - Flaticon</a></p>
+        <a href="https://www.flaticon.com/free-icons/ux-design" title="ux design icons">Ux design icons created by smashingstocks - Flaticon</a>
         </div>
-
-        <div>
-            <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <p><a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank">Linkedin</a></p>
-        </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-        <h2>Desenvolvido por Anderson Jader.</h2>
-        <a href="https://www.flaticon.com/free-icons/java" title="java icons">Java icons created by Freepik - Flaticon</a>
+        <h4>Portfólio 2023 - Anderson Jader</h4>
     </footer>
 
+    <script src="/script.js"></script>
+
 </body>
+
 </html>

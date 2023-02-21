@@ -1,5 +1,5 @@
-var imgAtual = "../ProjetoAtualizado/images/racsales-pq.png"
-var imgAnterior = "../ProjetoAtualizado/images/racsales.png"
+var imgAtual = "/images/racsales-pq.png"
+var imgAnterior = "/images/racsales.png"
 
 
 function trocar(){

@@ -65,7 +65,7 @@ body{
 /* Topo */
 
 .topo{
-    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.1)), url(../ProjetoAtualizado/images/mountains.jpg);
+    background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.1)), url(/images/mountains.jpg);
     width: 100%;
     height: 55vh;
     background-position: top;
@@ -92,13 +92,6 @@ body{
     display: block;
     font-size: 3em;
     padding-top: .3em;
-}
-
-.icon-arrow-down{
-    font-size: 3em;
-    display: block;
-    margin-top: 4em;
-    color: #222;
 }
 
 /* Parte Principal */
@@ -250,7 +243,7 @@ body{
     padding-top: 1em;
 }
 
-.projeto-cyber, .projeto-shoes, .projeto-inovando, .projeto-racsales{
+.projeto-racsales, .projeto-andamento{
     background-color:#f0f0f0;
     box-shadow: 8px 8px 8px rgba(10, 10, 10, .3);
     margin-bottom: 3em;
@@ -294,7 +287,15 @@ body{
     margin-top: .5em;
     animation: float 5s ease-in-out infinite;
     color: #14222d;
+    margin: auto;
 }
+
+.icons-trocaimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 /* Animação flutuando */
 
@@ -326,8 +327,25 @@ body{
 
 /* continuação da sessão projetos */
 
-#projetos img{
+.img-projetos{
     width: 100%;
+}
+
+.em-andamento{
+    position: relative;
+    overflow: hidden;
+}
+
+.em-andamento::before{
+    content: 'Não concluído';
+    color: white;
+    line-height: 2em;
+    font-size: 1em;
+    width: 100%;
+    height: 2em;
+    background-color:rgba(10, 10, 10);
+    position: absolute;
+    top: 40%;
 }
 
 #projetos article p{
@@ -352,6 +370,8 @@ body{
     margin-bottom: .5em;
 }
 
+
+/* Lembrete: deve-se trocar ao adicionar mais projetos. */
 .icon-github:hover, #display-rac:hover, #mobile-rac:hover{
     scale: 1.1;
     cursor: pointer;
@@ -488,4 +508,254 @@ body{
     font-weight: 200;
     text-decoration: none;
     text-align: justify;
+}
+
+/* Parte responsiva */
+
+@media screen and (min-width: 28.125em){
+    .undraw-topo{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 47.125em){
+
+    /* MENU */
+    .cabeçalho{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        font-family: "Antonio";
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:right;
+        width: 100%;
+    }
+
+    .container-first-text{
+        padding: 0;
+        display: flex;
+    }
+
+    .title, .sub-title{
+        font-size: 1.5em;
+    }
+
+    /* TOPO */
+
+    .topo{
+        height: 80vh;
+    }
+
+    .topo-art1{
+        margin-top: 3em;
+    }
+
+    /* PROJETOS */
+
+
+    .projeto-racsales, .projeto-andamento{
+        margin-bottom: 5em;
+    }
+
+    /* CERTIFICAÇÕES */
+    .certificacoes{
+        margin-bottom: 5em;
+    }
+
+    /* CONTATOS */
+
+    #contatos{
+        margin-bottom: 5em;
+    }
+
+    #contatos img{
+        width: 50%;
+        padding-top: 3em;
+    }
+}
+
+@media screen and (min-width: 62.5em){
+
+    .cabeçalho{
+        max-width: 1360px;
+        margin: auto;
+    }
+
+    .topo{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        max-width: 1360px;
+        margin: auto;
+    }
+
+    .topo-art1{
+        height: 10em;
+        margin-top: 22vh;
+    }
+
+    .topo img{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        position: relative;
+    }
+
+    .topo img::before{
+        content: url(../ProjetoAtualizado/images/html.png);
+        position: absolute;
+        width: 300px;
+    }
+
+    /* SOBRE MIM */
+
+    .sobre{
+        margin-top: 1em;
+    }
+
+    /* GERAL */
+
+    .principal{
+        max-width: 95%;
+        margin: auto;
+    }
+
+    #sobre-e-habilidades{
+        display: flex;
+        margin-top: 8em;
+        margin-bottom: 5em;
+    }
+    .sobre, #habilidades{
+        width: 46%;
+        margin: 2%;
+        background-color: #e4e4e4;
+        box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+    }
+
+
+    /* Organizando espaçamento */
+    #habilidades span{
+        margin-bottom: 1em;
+    }
+
+    #habilidades article{
+       margin-bottom: 3em;
+    }
+
+    /* Continuação  geral*/
+
+    .sobrecontent{
+        height: 21.7em;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .sobrecontent::before{
+        background: linear-gradient(transparent, #e4e4e4);
+    }
+
+    /* HABILIDADES */
+
+    #habilidades{
+        height: 35em;
+        overflow: hidden;
+        background-color: #e4e4e4;
+    }
+
+    /* PROJETOS */
+
+    #projetos{
+        background-color: #ddd;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+        margin-bottom: 5em;
+        max-width: 1360px;
+        margin: auto;
+    }
+
+    .agrupamento-informativos{
+        display: flex;
+        flex-direction: row;
+    }
+
+   .projetos-informativo0 img{
+    margin-top: 1em;
+    width: 70%;
+
+   }
+
+   .projetos-informativo0{
+    width: 46%;
+    margin: 2%;
+   }
+
+   .projetos-informativo {
+    width: 46%;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .projetos-projetos{
+    display: flex;
+    flex-direction: row;
+   }
+
+   .projeto-racsales, .projeto-andamento{
+    width: 46%;
+    margin: 2%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+   }
+
+   .projeto-andamento{
+    height: 27em;
+   }
+
+   .projeto-andamento img{
+    height: 15.5em;
+   }
+
+   /* CERTIFICAÇÕES */
+
+   .certificacoes h4{
+    font-family: "Antonio";
+    letter-spacing: 2px;
+    font-size: 1.1em;
+   }
+
+   .certificacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+   .certificacoes{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0 ,.1);
+    background-color: #e4e4e4;
+    max-width: 1360px;
+    margin: auto;
+    margin-bottom: 5em;
+    margin-top: 5em;
+   }
+
+   #contatos{
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0 ,.1);
+    margin-bottom: 5em;
+    background-color: #e4e4e4;
+   }
+
+   #contatos p{
+    background-color: #e4e4e4;
+   }
+
+   #contatos h4{
+    background-color: #e4e4e4;
+   }
+
 }
