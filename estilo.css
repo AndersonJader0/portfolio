@@ -680,12 +680,12 @@ body{
     .agrupamento-informativos{
         display: flex;
         flex-direction: row;
+        margin-bottom: 7em;
     }
 
    .projetos-informativo0 img{
     margin-top: 1em;
     width: 70%;
-
    }
 
    .projetos-informativo0{
