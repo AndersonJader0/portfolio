@@ -321,6 +321,14 @@ body{
     margin-bottom: 1em;
 }
 
+.img-projetos{
+    border: 1px solid transparent;
+}
+
+.img-projetos:hover{
+    border: 1px solid black;
+}
+
 #projetos a{
     color: #222;
 }
