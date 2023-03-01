@@ -52,13 +52,15 @@ body{
     font-size: 1.4em;
     text-decoration: none;
     color: #ebebeb;
+    padding: .5em .7em .5em .7em;
 }
 
 .menu li{
     padding: .7em;
+    list-style: none;
 }
 
-.menu a:hover li{
+.menu li:hover a{
     background-color: #2a4057;
 }
 
@@ -534,6 +536,12 @@ body{
         flex-direction: row;
         text-align: center;
         font-family: "Antonio";
+    }
+
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
     }
 
     .menu{
