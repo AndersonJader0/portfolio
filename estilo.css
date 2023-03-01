@@ -408,13 +408,13 @@ body{
     padding: 1em;
     display: inline-block;
     text-decoration: none;
-    color:#ebebeb;
+    color: white;
     border-radius: 5px;
     margin-bottom: 1em;
 }
 
 .certificacoes a:hover{
-    background-color: #1292cd;
+    background-color: #479ac1;
 }
 
 /* CONTATOS */
