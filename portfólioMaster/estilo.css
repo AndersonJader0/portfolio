@@ -1,0 +1,473 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #eeeeee;
+    font-family: sans-serif;
+    background-image: linear-gradient(#555, #333);
+}
+
+.menu{
+    background-image: linear-gradient(to right, #111, #222, #333, #222, #111);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-lista{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-title{
+    width: 30%;
+    font-size: 1.3em;
+    align-self: center;
+}
+
+.menu-title span{
+    color: orange;
+}
+
+.menu-item{
+    padding: 1.4em 1em;
+    width: 70%;
+    transition: all .2s;
+}
+
+.menu-item:hover{
+    color: orange;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+/* TOPO */
+
+.topo{
+    background-image: linear-gradient(to bottom, #222, #191919, #222);
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Café */
+
+.fumaca-topo{
+    width: 1em;
+    height: 1.1em;
+    background: none;
+    align-self: center;
+    border: 7px solid blue;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 50%;
+    transform: rotate(40deg) translate(4px);
+}
+
+
+.fumaca-bottom{
+    width: 1em;
+    height: 1.1em;
+    border: 7px solid blue;
+    border-radius: 50%;
+    background: none;
+    border-right: none;
+    border-top: none;
+    align-self: center;
+    transform: rotate(47deg);
+}
+
+.cafe{
+    align-self: center;
+    width: 2.5em;
+    height: 2.7em;
+    background-color: #eee;
+    border-radius: .5em;
+    position: relative;
+    box-shadow: 2.5px 2px 1px rgb(169, 169, 169);
+}
+
+.cafe::before{
+    position: absolute;
+    content: "";
+    width: 1em;
+    height: 1.4em;
+    background-color: none;
+    border: 5px solid #eee;
+    border-right: none;
+    border-radius: 7px;
+    transform: translate(-17px, 5px);
+}
+
+.cafe::after{
+    content: "";
+    width: 90%;
+    height: 10px;
+    background-image: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0,.8));
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    right: -50%;
+    transform: translateX(-60%);
+}
+
+.topo-title{
+    align-self: center; 
+    font-size: 2em;
+    text-align: center;
+}
+
+.topo-subtitle{
+    align-self: center;
+    font-size: 1.6em;
+}
+
+.topo-title strong{
+    color: blue;
+    background-color: #edf0f2;
+    padding: .1em .3em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.topo-subtitle strong{
+    color: orange;
+}
+
+.saudacoes{
+    display: flex;
+    align-self: center;
+    margin-top: 2em;
+}
+
+.code{
+    align-self: center;
+    background-color: none;
+    width: 2em;
+    height: 2em;
+    border: 6px solid blue;
+    border-right: none;
+    border-top: none;
+    transform: rotate(45deg);
+    margin-top: 1em;
+}
+
+.bem-vindo{
+    font-size: 1.2em;
+    align-self: center;
+    border-bottom: 5px solid blue;
+}
+
+.code2{
+    align-self: center;
+    background-color: none;
+    width: 2em;
+    height: 2em;
+    border: 6px solid blue;
+    border-right: none;
+    border-top: none;
+    transform: rotate(220deg);
+    margin-top: 1em;
+}
+
+/*Redes sociais*/
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+/* CSS linkedin */
+
+.linkedin{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #007fff;
+    margin-right: 30px;
+    transition: all .2s;
+}
+
+.linkedin:hover{
+    border: 1px solid orange;
+    transition: all .2s;
+}
+
+.pingo{
+    width: .2em;
+    height: .2em;
+    background-color: white;
+    transform: translate(12px, 8px);
+    border-radius: 50%;
+    position: relative;
+}
+
+.pingo::before{
+    content: "";
+    position: absolute;
+    width: .2em;
+    height: 1em;
+    background-color: white;
+    transform: translate(0px, 5px);
+}
+
+.barra{
+    width: .2em;
+    height: 1em;
+    background-color: white;
+    transform: translate(18px, 9.8px);
+    position: relative;
+}
+
+.barra:after{
+    content: "";
+    width: 10px;
+    height: .66em;
+    border: 3.5px solid white;
+    border-left: none;
+    border-bottom: none;
+    background: none;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    top: 3px;
+    position: absolute;
+}
+
+/* CSS github */
+
+.github{
+    background: black;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+.github:hover{
+    border: 1px solid orange;
+    transition: all .2s;
+}
+
+.cabeca{
+    width: 1.5em;
+    height: 1.2em;
+    background: white;
+    border-radius: 40%;
+    position: relative;
+    transform: translate(7px, 11px);
+}
+
+.cabeca::before{
+    content: "";
+    width: .4em;
+    height: .5em;
+    background: white;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translate(.3px, -1.9px) rotate(0deg);
+}
+
+.cabeca::after{
+    content: "";
+    width: .4em;
+    height: .4em;
+    background: white;
+    position: absolute;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translate(18px, -1.9px) rotate(10deg);
+}
+
+.cara{
+    width: 19px;
+    height: 10px;
+    background: black;
+    position: relative;
+    transform: translate(9.5px, -5px);
+    border-radius: 1em;
+}
+
+.cara::after{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: white;
+    transform: translate(1px, 2px);
+    border-radius: 50%;
+}
+
+.cara::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: white;
+    transform: translate(12px, 2px);
+    border-radius: 50%;
+}
+
+
+/* MAIN */
+
+/* Section 1 */
+
+.sobre{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 16em;
+    padding: 2em;
+    background-image: linear-gradient(#fff, #fff);
+}
+
+.sobre-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid black;
+    padding: 1em;
+}
+
+.sobre-title{
+    margin-bottom: 1em;
+    font-family:Trebuchet MS;
+    background: #202124;
+    border-radius: .1em;
+    width: 5em;
+    padding-left: .3em;
+}
+
+.sobre-title img{
+    width: 1em;
+    height: 1em;
+    margin-left: .3em;
+    background-color: #fff;
+    justify-self: center;
+    box-shadow: 0px 1.5px .1px #fff;
+}
+
+.sobre-sobre{
+    line-height: 1.4;
+    letter-spacing: 1.1;
+    color: #111;
+    font-weight: 400;
+    font-size:
+}
+
+/* Section 2 */
+
+.skills{
+    height: 22em;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    background-image: linear-gradient(#fff, #fff);
+}
+
+.skills-content{
+    border: 3px solid #202124;
+}
+
+
+.skills-title{
+    padding-left: .4em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #202124;
+    width: 5em;
+    margin-bottom: 1em;
+}
+
+.skills-content-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills-content-imgs img{
+    width: 3.8em;
+    height: 3.8em;
+    margin-bottom: 5px;
+    border: 1px solid #202124;
+    background-color: #fff;
+    padding: .3em;
+}
+
+.skills img:hover{
+    cursor: pointer;
+}
+
+.skills div{
+    background: ;
+    padding: 1em;
+}
+
+.skills p{
+    margin-top: 1em;
+    color: #fff;
+    background-color: #202124;
+    text-align: center;
+    padding: .2em;
+}
+
+/* Projetos */
+
+.projeto1{
+    height: 20em;
+    background-image: linear-gradient(#fff, #fff);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto1-title{
+    background: #202124;
+    padding: em;
+    display: block;
+    text-align: center;
+    margin-bottom: .2em;
+}
+
+
+.projeto1-content{
+    height: 16em;
+    border: 3px solid black;
+    background-image: url(/imgs/losten.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projeto1-content:hover{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/imgs/losten.png);
+    cursor: pointer;
+}
+
+.projeto2{
+    height: 19em;
+    background-image: linear-gradient(#fff, #fff);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto2-content{
+    height: 16em;
+    border: 3px solid #202124;
+    background-image: url(/imgs/RacSales.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.projeto2-content:hover{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/imgs/RacSales.png);
+    cursor: pointer;
+}
+
