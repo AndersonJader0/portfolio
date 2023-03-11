@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?fih0ij');
-  src:  url('fonts/icomoon.eot?fih0ij#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?fih0ij') format('truetype'),
-    url('fonts/icomoon.woff?fih0ij') format('woff'),
-    url('fonts/icomoon.svg?fih0ij#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?c22jgh');
+  src:  url('fonts/icomoon.eot?c22jgh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?c22jgh') format('truetype'),
+    url('fonts/icomoon.woff?c22jgh') format('woff'),
+    url('fonts/icomoon.svg?c22jgh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,44 +25,26 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-newspaper:before {
-  content: "\e904";
-}
 .icon-phone:before {
   content: "\e942";
 }
-.icon-pushpin:before {
-  content: "\e946";
+.icon-calendar:before {
+  content: "\e953";
 }
-.icon-display:before {
-  content: "\e956";
+.icon-bubble:before {
+  content: "\e96b";
 }
-.icon-mobile:before {
-  content: "\e958";
+.icon-bubbles2:before {
+  content: "\e96d";
 }
-.icon-mobile2:before {
-  content: "\e959";
+.icon-bubble2:before {
+  content: "\e96e";
 }
-.icon-user:before {
-  content: "\e971";
+.icon-bubbles4:before {
+  content: "\e970";
 }
-.icon-user-tie:before {
-  content: "\e976";
-}
-.icon-wrench:before {
-  content: "\e991";
-}
-.icon-cog:before {
-  content: "\e994";
-}
-.icon-briefcase:before {
-  content: "\e9ae";
-}
-.icon-clipboard:before {
-  content: "\e9b8";
-}
-.icon-cloud-download:before {
-  content: "\e9c2";
+.icon-power:before {
+  content: "\e9b5";
 }
 .icon-sphere:before {
   content: "\e9c9";
@@ -70,14 +52,14 @@
 .icon-earth:before {
   content: "\e9ca";
 }
-.icon-arrow-down:before {
-  content: "\ea36";
+.icon-embed:before {
+  content: "\ea7f";
 }
-.icon-circle-up:before {
-  content: "\ea41";
+.icon-embed2:before {
+  content: "\ea80";
 }
-.icon-circle-left:before {
-  content: "\ea44";
+.icon-terminal:before {
+  content: "\ea81";
 }
 .icon-whatsapp:before {
   content: "\ea93";
@@ -88,9 +70,6 @@
 .icon-linkedin:before {
   content: "\eac9";
 }
-.icon-html-five:before {
-  content: "\eae4";
-}
-.icon-css3:before {
-  content: "\eae6";
+.icon-linkedin2:before {
+  content: "\eaca";
 }

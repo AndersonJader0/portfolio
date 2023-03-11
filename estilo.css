@@ -1,87 +1,474 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: "poppins";
+    overflow-x: hidden;
+}
+
 a{
-    color: #fff;
     text-decoration: none;
+    color: #eee;
 }
 
-a:hover{
-    opacity: .7s;
+.menu{
+    background-image: linear-gradient(to left,rgb(0,0,0), rgb(19, 19, 19));
+    color: white;
 }
 
-.logo{
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: .3em;
-}
-
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif;
-    background: #21212e;
-}
-
-.nav-list{
-    width: 50%;
+.menu-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-around
+}
+
+.menu-content-item{
+    padding: 1.5em;
     list-style: none;
-    padding: 1.7em;
+}
+
+.menu-content-item a{
+    color: #eee;
+    text-decoration: none;
+    padding: 1.5em 5em;
+    transition: all .25s;
+}
+
+.menu-content-item a:hover{
+    background:rgb(19, 19, 19);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    height: 90.2vh;
+    background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.9)), url(/imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img-perfil{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    background-image: url(/imgs/devfront.jpg);
+    background-size: cover;
+    margin-bottom: .5em;
+}
+
+h1{
+    font-weight: 300;
+    border-left: 1px solid white;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.barra-piscando{
+    animation: piscando 1s infinite;
+}
+
+@keyframes piscando{
+
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+}
+
+aside{
+    width: 60%;
+    padding: 2em 10em;
+    color: white;
+    text-align: center;
+}
+
+.img-aside{
+    width: 100%;
+}
+
+.title{
+    padding: 1em;
+    background-color: #111;
+}
+.subtitle{
+    padding: .5em;
+    border: 1px solid #eee;
+    width: 15em;
+    transform: translateX(8em);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1em;
+}
+
+.linha-divisoria{
+    width: 1px;
+    background: #eee;
+    height: 15em;
+    text-align: center;
+}
+
+.aside-content-info{
+    display: flex;
+    justify-content: center;
+}
+
+.p1{
+    margin-top: 3em;
+    width: 240px;
+}
+
+.p2{
+    margin-top: 8em;
+    width: 240px;
+}
+
+.ponto1, .ponto2{
+    width: .5em;
+    height: .5em;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.ponto1{
+    margin-top: 5em;
+    transform: translateX(.25em);
+    position: relative;
+}
+
+.ponto1::after{
+    content: '202?';
+    position: absolute;
+    left: 1em;
+    top: -.5em;
+}
+
+.ponto2{
+    margin-top: 10em;
+    transform: translateX(-.25em);
+}
+
+.ponto2::before{
+    content: '202?';
+    position: absolute;
+    right: 1em;
+    top: -.5em;
+}
+
+.content1, .content2{
+    display: flex;
+}
+
+.sabermais{
+    padding: 1em 2em;
+    background: #eee;
+    color: #222;
+    border-radius: 2em;
+    transition: all .25s;
+}
+
+.sabermais:hover{
+    cursor: pointer;
+    background: #ccc;
+}
+
+article{
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Barlow";
+    color: #eee;
+}
+
+.p-dev-front{
+    padding: 1em;
+    font-size: 1.4em;
+    background-color: #111;
+    margin-top: .5em;
+}
+
+.p-description{
+    width: 15em;
+    font-size: 1.2em;
+    padding: 1em;
+    border-left: 1px solid #eee;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+article div{
+    width: 20.5em;
+    display: flex;
     justify-content: space-around;
 }
 
-.mobile-menu{
+.entrecontato{
+    padding: .8em;
+    background: transparent;
+    border: 1px solid #eee;
+    border-radius: 2em;
+    width: 8em;
+    text-align: center;
+    transition: all .25s;
+}
+
+.entrecontato:hover{
     cursor: pointer;
-    display: none;
+    background: #222;
+    border: 1px solid #eee;
 }
 
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 6px;
+.icon-linkedin, .icon-github{
+    font-size: 2em;
+    align-self: center;
+    color: #eee;
+    text-decoration: none;
+    transition: all .25s;
 }
 
-.menu-content a{
-    padding: .65em;
+.icon-linkedin:hover, .icon-github:hover{
+    transform: scale(1.1);
+    transition: all .25s;
 }
 
-@media screen and (max-width: 999px){
+.link-texto{
+    color: #eee;
+    padding: .15em;
+    transition: all .3s;
+    border-radius: 50%;
+    text-decoration: underline;
+    transition: all .25s;
+}
 
-    body{
-        overflow-x: hidden;
+.link-texto:hover{
+    cursor: pointer;
+    transition: all .3s;
+    text-decoration: underline;
+}
+
+footer{
+    padding: 1.5em;
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1370px){
+
+    aside{
+        padding: 2em 3em;
+        width: 60%;
     }
 
-    .nav-list{
-        position: absolute;
-        top: 8vh; /* Para ficar abaixo do header */
-        right: 0;
-        width: 30vw;
-        height: 40vh;
-        background: #21212e;
+    .img-aside{
+        width: 26em;
+    }
+
+    .img-perfi{
+        margin-left: 1em;
+    }
+
+    .linha-divisoria{
+        background: #eee;
+    }
+
+    .p1{
+        margin-top: 3em;
+        width: 220px;
+    }
+    
+    .p2{
+        margin-top: 8em;
+        width: 220px;
+    }
+
+    .ponto1{
+        margin-top: 5em;
+        transform: translateX(.25em);
+    }
+    
+    .ponto2{
+        margin-top: 10em;
+        transform: translateX(-.25em);
+    }
+
+
+}
+
+@media screen and (max-width: 1240px){
+    aside{
+        width: 60%;
+    }
+
+    .ponto1{
+        margin-top: 5em;
+        transform: translateX(.35em);
+    }
+    
+    .ponto2{
+        margin-top: 10em;
+        transform: translateX(-.2em);
+    }
+}
+
+@media screen and (max-width: 1219px){
+
+    .ponto1{
+        margin-top: 5em;
+        transform: translateX(.25em);
+    }
+    
+    .ponto2{
+        margin-top: 10em;
+        transform: translateX(-.25em);
+    }
+
+    .linha-divisoria{
+        height: 17em;
+    }
+}
+@media screen and (max-width: 1000px){
+
+    .title{
+        padding: .3em;
+        font-size: 1em;
+    }
+
+    aside{
+        width: 50%;
+    }
+
+    .img-aside{
+        width: 100%;
+    }
+
+    .p1{
+        font-size: .9em;
+        width: 100%;
+    }
+    .p2{
+        width: 100%;
+        font-size: .9em;
+    }
+
+    .linha-divisoria{
+        background: #eee;
+    }
+}
+
+@media screen and (max-width: 900px){
+    main{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transforM .4s ease-in;
+        height: 76em;
     }
 
-    .nav-list{
-        margin-left: 0;
-        opacity: 0;
+    aside{
+        width: 28em;
     }
 
-    .mobile-menu{
-        display: block;
+    article{
+        width: 30em;
     }
 
-    .nav-list.active{
-        transform: translateX(0);
+    .p1, .p2{
+        width: 160px;
+    }
+
+    .p1{
+        margin-top: 3.5em;
+    }
+
+    .p2{
+        margin-top: 9em;
+    }
+
+    .linha-divisoria{
+        width: 2px;
+        background: #eee;
+    }
+    
+    .menu a{
+        padding: 20%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    main{
+    background-image: linear-gradient(rgba(0,0,0,.9), rgba(0,0,0,.85)), url(/imgs/background.jpg);
+    }
+
+    .linha-divisoria{
+        background: #eee;
+        width: 1px;
+    }
+
+    .menu a{
+        padding: 10%;
+    }
+
+    .menu .menu-content-item a{
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .p1, .p2{
+        width: 143px;
+    }
+    .linha-divisoria{
+        background: #eee;
+        width: 1px;
+    }
+
+    .menu a{
+        padding: 10%;
+    }
+
+    .menu .menu-content-item a{
+        padding: 1em .7em;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .menu .menu-content-item a{
+        padding: 1.5em .4em;
+    }
+
+    article{
+        padding: 0;
+        width: 20em;
+    }
+
+    aside{
+        width: 19em;
+        padding: 3.5em 0em;
+    }
+
+    .linha-divisoria{
+        background: #eee;
+        width: 1px;
+    }
+
+    .p1{
+        margin-top: 2em;
+    }
+
+    .menu a{
+        padding: 10%;
     }
 }
