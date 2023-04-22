@@ -1,0 +1,185 @@
+$font_main: 'Open Sans';
+
+@mixin theme_btn($bg_btn: orange){
+    background-color: $bg_btn;
+    color: #fff;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border-radius: 2em;
+}
+
+*{
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    height: 100vh;
+    background-image: url(/imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: $font_main;
+    padding: 0 2em;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 10vh;
+    margin: 0 auto;
+
+    .logo{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .address{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        position: relative;
+    }
+
+    .sandwich{
+        display: none;
+
+        i{
+            font-size: 1.5em;
+        }
+    }
+
+    a{
+        transition: .25s;
+    }
+
+    a:not(.btn):hover{
+        color: orange;
+    }
+}
+
+.sandwich:hover{
+    cursor: pointer;
+}
+
+/* Buttons effects */
+
+.btn{
+    @include theme_btn;
+    transition: .25s;
+}
+
+.btn:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.btn:active{
+    transform: scale(0.935);
+}
+
+.mobile_address{
+    // height: 342.4px;
+    height: 0;
+    width: 300px;
+    display: block;
+    background-color: #eee;
+    position: absolute;
+    right: 2em;
+    top: 10vh;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s ease-in-out;
+    li{
+        padding: 2.1em;
+        list-style: none;
+    }
+
+    a:not(.btn){
+        transition: color .25s ease;
+        color: black;
+        font-weight: 500;
+    }
+
+    a:not(.btn):hover{
+        color: orange;
+    }
+
+    .btn{
+        transition: .25s;
+    }
+
+    /* Other button on li */
+
+    .li_btn{
+        transition: .25s;
+    }
+
+    .li_btn:hover{
+        transform: scale(1.1);
+    }
+
+    .li_btn:active{
+        transform: scale(.935);
+    }
+}
+
+/* Cabeçalho */
+
+.content{
+    margin-top: 10em;
+    text-align: center;
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+        background:rgba(255, 255, 255, .1);
+        display: inline-block;
+        padding: .25em .6em;
+    }
+
+    h2{
+        margin-top: .5em;
+        font-size: 1.5em;
+        strong{
+            font-weight: bold;
+            border-bottom: 2px solid orange;
+        }
+    }
+
+    p{
+        width: 350px;
+        margin: 2em auto 0 auto;
+        padding-left: .5em;
+        text-align: left;
+        border-left: 3px solid #fff;
+        font-weight: 500;
+        letter-spacing: 2;
+        line-height: 1.4;
+        strong{
+            color: orange;
+            font-weight: 700;
+        }
+    }
+
+    .icons{
+        align-items: center;
+        font-size: 2em;
+        .fa-brands{
+            margin: 1em;
+        }
+
+        .fa-brands:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .fa-brands:active{
+            transform: scale(.935);
+        }
+    }
+}

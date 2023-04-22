@@ -1,0 +1,88 @@
+@media screen and (max-width: 1000px){
+
+    .bar{
+        .sandwich{
+            display: block;
+        }
+
+        .address{
+            display: none;
+        }
+
+        #iconClose{
+            display: none;
+        }
+    }
+
+    .content{
+        h1{
+            font-size: 2em;
+            padding: .3em .8em;
+        }
+
+        p{
+            border-left: 2px solid #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+
+    #about{
+        padding: 3.5em 0;
+    }
+
+    .about-me{
+        img{
+            display: none;
+        }
+        .resume a{
+            display: inline-block;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .about{
+        .skills{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: none;
+            margin-top: 1.2em;
+            margin-bottom: 1.2em;
+            p{
+                padding: 1em;
+                border-bottom: 1px solid #222;
+            }
+        }
+
+        .projects{
+            img{
+                display: none;
+            }
+        }
+
+        .projects-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                font-size: 1.2em;
+            }     
+        }
+    }
+
+    .project1, .project2, .project3{
+        height: 380px;
+        margin-bottom: 1em;
+    }
+
+    .title{
+        background-color: orange;
+        color: #fff;
+        padding: .4em;
+        width: 10em;
+        margin: 0 auto;
+    }
+}

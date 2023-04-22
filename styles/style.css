@@ -1,0 +1,372 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  height: 100vh;
+  background-image: url(/imgs/background.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans";
+  padding: 0 2em;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 10vh;
+  margin: 0 auto;
+}
+.bar .logo {
+  font-size: 2em;
+  font-weight: bold;
+}
+.bar .address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.bar .sandwich {
+  display: none;
+}
+.bar .sandwich i {
+  font-size: 1.5em;
+}
+.bar a {
+  transition: 0.25s;
+}
+.bar a:not(.btn):hover {
+  color: orange;
+}
+
+.sandwich:hover {
+  cursor: pointer;
+}
+
+/* Buttons effects */
+.btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.8em 1em;
+  outline: none;
+  border: none;
+  border-radius: 2em;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(0.935);
+}
+
+.mobile_address {
+  height: 0;
+  width: 300px;
+  display: block;
+  background-color: #eee;
+  position: absolute;
+  right: 2em;
+  top: 10vh;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+  /* Other button on li */
+}
+.mobile_address li {
+  padding: 2.1em;
+  list-style: none;
+}
+.mobile_address a:not(.btn) {
+  transition: color 0.25s ease;
+  color: black;
+  font-weight: 500;
+}
+.mobile_address a:not(.btn):hover {
+  color: orange;
+}
+.mobile_address .btn {
+  transition: 0.25s;
+}
+.mobile_address .li_btn {
+  transition: 0.25s;
+}
+.mobile_address .li_btn:hover {
+  transform: scale(1.1);
+}
+.mobile_address .li_btn:active {
+  transform: scale(0.935);
+}
+
+/* Cabeçalho */
+.content {
+  margin-top: 10em;
+  text-align: center;
+}
+.content h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  padding: 0.25em 0.6em;
+}
+.content h2 {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+}
+.content h2 strong {
+  font-weight: bold;
+  border-bottom: 2px solid orange;
+}
+.content p {
+  width: 350px;
+  margin: 2em auto 0 auto;
+  padding-left: 0.5em;
+  text-align: left;
+  border-left: 3px solid #fff;
+  font-weight: 500;
+  letter-spacing: 2;
+  line-height: 1.4;
+}
+.content p strong {
+  color: orange;
+  font-weight: 700;
+}
+.content .icons {
+  align-items: center;
+  font-size: 2em;
+}
+.content .icons .fa-brands {
+  margin: 1em;
+}
+.content .icons .fa-brands:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.content .icons .fa-brands:active {
+  transform: scale(0.935);
+}
+
+@media screen and (max-width: 1000px) {
+  .bar .sandwich {
+    display: block;
+  }
+  .bar .address {
+    display: none;
+  }
+  .bar #iconClose {
+    display: none;
+  }
+  .content h1 {
+    font-size: 2em;
+    padding: 0.3em 0.8em;
+  }
+  .content p {
+    border-left: 2px solid #fff;
+  }
+}
+@media screen and (max-width: 700px) {
+  #about {
+    padding: 3.5em 0;
+  }
+  .about-me img {
+    display: none;
+  }
+  .about-me .resume a {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .about .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: none;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+  }
+  .about .skills p {
+    padding: 1em;
+    border-bottom: 1px solid #222;
+  }
+  .about .projects img {
+    display: none;
+  }
+  .about .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .projects-content a {
+    font-size: 1.2em;
+  }
+  .project1, .project2, .project3 {
+    height: 380px;
+    margin-bottom: 1em;
+  }
+  .title {
+    background-color: orange;
+    color: #fff;
+    padding: 0.4em;
+    width: 10em;
+    margin: 0 auto;
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  height: 50em;
+  font-family: "Open Sans";
+  padding: 10em 0em;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-me p, .about-me h3 {
+  color: #222;
+}
+.about-me h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+.about-me .workspace {
+  width: 30em;
+}
+.about-me .resume {
+  padding: 0em 2em;
+  letter-spacing: 2;
+  line-height: 2;
+  font-weight: 500;
+  font-size: 1em;
+}
+.about-me a {
+  color: #fff;
+  padding: 0.5em 2em;
+  background: orange;
+  display: inline-block;
+  margin-top: 1em;
+  border-radius: 2em;
+}
+
+.skills {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 5em auto;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #222;
+}
+.skills p {
+  color: #222;
+  font-size: 2em;
+}
+.skills abbr {
+  color: #222;
+}
+
+.projects {
+  max-width: 1200px;
+  margin: auto;
+}
+.projects .img {
+  width: 24em;
+  height: 280px;
+  border: 1px solid #444;
+}
+.projects .title {
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2em;
+}
+.projects h3 {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.projects-content {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.projects-content p, .projects-content h3, .projects-content h4 {
+  color: #222;
+  font-weight: 500;
+}
+.projects-content h4 {
+  font-size: 1.3em;
+  margin: 0.6em 0;
+}
+.projects-content .see {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  margin-top: 0.8em;
+  margin-bottom: 4em;
+}
+.projects-content .see a {
+  border-bottom: 2px solid orange;
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.projects-content .see a:hover {
+  color: orange;
+  border-bottom: 0px;
+}
+
+.img1 {
+  background-image: url(/imgs/naomihfit.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url(/imgs/calculator.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url(/imgs/chatappcss.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url(/imgs/loster.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  background-image: url(/imgs/kurtfinancial.png);
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

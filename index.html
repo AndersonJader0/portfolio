@@ -4,57 +4,139 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilo.css">
-    <link rel="stylesheet" href="/icomoon/style.css">
+    <meta name="author" content="Anderson Jader">
+    <meta name="description" content="Procurando um desenvolvedor web Front-end para estagiar? Prazer me chamo Anderson Jader, quando começamos?">
+    <meta name="keywords" content="desenvolvedor, front-end, estágio, web, tech">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,500;1,300&family=Poppins:wght@400;500;600&family=Roboto:wght@300;400;700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfólio</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul class="menu-content">
-            <li class="menu-content-item"><a href="https://eloquent-madeleine-c9a12a.netlify.app">Sobre</a></li>
-            <li class="menu-content-item"><a href="https://gregarious-gelato-7d1c65.netlify.app">Skills</a></li>
-            <li class="menu-content-item"><a href="https://zesty-sfogliatella-ad2d0f.netlify.app">Projetos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="bar">
+            <a href="#" title="#" class="logo">SmoothCode</a>
 
-    <main>
-        <article>
-            <div class="img-perfil">
-            </div>
-            <h1>Anderson Jader <spaan class="barra-piscando">|</spaan></h1>
-            <a class="p-dev-front">Desenvolvedor Front-end</a>
-            <p class="p-description"> <cite>Uma boa página é como uma boa terra para as sementes conhecidas como tráfego.</cite></p>
-            <div class="div-contato">
-                <a href="https://api.whatsapp.com/send?phone=5513996356390&text=Ol%C3%A1,%20tudo%20bem?" class="entrecontato" title="Via whatssapp">Contatar</a>
-                <a href="https://www.linkedin.com/in/anderson-jader-710685235/" title="Linkedin" class="icon-linkedin"></a>
-                <a href="https://github.com/AndersonJader0" title="Github" class="icon-github"></a>
-            </div>
-        </article>
-        <aside>
-            <img src="/imgs/thinkcode.svg" class="img-aside">
-            <p class="title">Bem vindo(a) ao meu portfólio, é um prazer tê-lo(a) aqui.</p>
-            <p class="subtitle">Um pouco sobre</p>
-            <div class="aside-content-info">
-                <div class="content1">
-                <p class="p1">Ingressei em Ciência da computação na <a href="https://www.usjt.br/graduacao/ciencia-da-computacao/" target="_blank" class="link-texto" title="Link para o site da universidade e graduação">São Judas</a></p>
-                <p class="ponto1"></p>
-                </div>
-                <div class="linha-divisoria"></div>
-                <div class="content2">
-                    <p class="ponto2"></p>
-                <p class="p2">Iniciei meus <a href="https://www.udemy.com/course/curso-web-design-fundamentos-aprenda-html-css-e-javascript/" class="link-texto" target="_blank" title="Link para o curso que estou fazendo">estudos</a> em desenvolvimento web na Udemy.</p>
-                </div>
-            </div>
-            <a href="https://eloquent-madeleine-c9a12a.netlify.app" class="sabermais">Saber mais</a>
-        </aside>
+            <ul class="address">
+                <li><a href="#about" title="#">About me</a></li>
+                <li><a href="#skill" title="#">Skills</a></li>
+                <li><a href="#project" title="#">Projects</a></li>
+                <a href="https://api.whatsapp.com/send?phone=5513996356390&text=Ol%C3%A1%20Anderson,%20tudo%20bem?" target="_blank" title="#" class="btn">Get in touch</a>
+            </ul>
         
-    </main>
+            <div class="sandwich" onclick="toOpen()">
+                <i class="fa-solid fa-bars" id="iconOpen"></i>
+                <i class="fa-solid fa-x" id="iconClose"></i>
+            </div>
+        </nav>
 
-    <footer>
-        <p>Todos os direitos reservados por copyright &copy; - Anderson Jader 2023</p>
-    </footer>
+        <div class="mobile_address">
+            <li><a href="#about" title="#">About me</a></li>
+            <li><a href="#skill" title="#">Skills</a></li>
+            <li><a href="#project" title="#">Projects</a></li>
+            <li class="li_btn"><a href="https://api.whatsapp.com/send?phone=5513996356390&text=Ol%C3%A1%20Anderson,%20tudo%20bem?" target="_blank" title="#" class="btn">Get in touch</a></li>
+        </div>
+
+        <section class="content">
+            <h1>Anderson Jader</h1>
+            <h2>Web <strong>Front-end</strong> Developer</h2>
+            <p>Welcome to my portfolio. I am a simple man with <strong>passion for codes</strong>, It will be a pleasure if you meet a little bit of my work and about me.</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/anderson-jader-710685235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AndersonJader0" target="_blank"><i class="fa-brands fa-github"></a></i>
+            </div>
+        </section>
+    </header>
+
+    <main id="about">
+        <section class="about-me">
+
+            <aside>
+                <img src="/imgs/workspace.jpg" class="workspace">
+            </aside>
+
+            <article class="resume">
+                <h3>About me</h3>
+                <p>Nice to meet you, I am Anderson a web Front-end professional with habilities on creating landing pages, 
+                logins, store interfaces and more. With the look on the details I seek clean and organized codes,
+                It's exactly what I call of the smooth code. I started coding when I was at 17 years and when I achieve the
+                maturity I ingressed on the University São Judas Tadeu on Santos. When I am not cooding you probably will
+                found me reading books or watching Master Chef.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5513996356390&text=Ol%C3%A1%20Anderson,%20tudo%20bem?" target="_blank">Get in touch</a>
+            </article>
+
+        </section>
+
+        <section class="skills" id="skill">
+            <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
+            <p><abbr title="Cascading Style Sheets">CSS</abbr></p>
+            <p><abbr title="Syntactically Awesome Style sheet">Sass</abbr></p>
+            <p>Javascript</p>
+            <p>Java</p>
+        </section>
+
+        <h3>Projects</h3>
+
+        <section class="projects" id="project">
+            <h3 class="title">Projects</h3>
+            <div class="projects-content">
+                <div class="project1">
+                    <div class="img img1"></div>
+                    <h4>Naomihfit</h4>
+                    <p>HTML, CSS and JavaScript</p>
+                    <div class="see">
+                        <a href="https://subtle-lokum-f80b86.netlify.app">See project</a>
+                        <p>Direitos autorais</p>
+                    </div>
+                    
+                </div>
+
+                <div class="project2">
+                    <div class="img img2"></div>
+                    <h4>Calculator App</h4>
+                    <p>HTML, CSS and JavaScript</p>
+                    <div class="see">
+                        <a href="https://tourmaline-rugelach-7df635.netlify.app">See project</a>
+                        <a href="https://github.com/AndersonJader0/Calculator-app">See code</a>
+                    </div>
+                </div>
+
+                <div class="project3">
+                    <div class="img img3"></div>
+                    <h4>Chat App CSS</h4>
+                    <p>HTML and CSS</p>
+                    <div class="see">
+                        <a href="https://calm-melba-a2e317.netlify.app">See project</a>
+                        <a href="https://github.com/AndersonJader0/Chat-app-CSS">See code</a>
+                    </div>
+                </div>
+
+                <div class="project4">
+                    <div class="img img4"></div>
+                    <h4>Loster Footnister</h4>
+                    <p>HTML and CSS</p>
+                    <div class="see">
+                        <a href="https://tubular-snickerdoodle-37328d.netlify.app">See project</a>
+                        <a href="https://github.com/AndersonJader0/Projeto-LosTen">See code</a>
+                    </div>
+                </div>
+
+                <div class="project5">
+                    <div class="img img5"></div>
+                    <h4>Kurt Financial</h4>
+                    <p>HTML, CSS, Sass and JavaScript</p>
+                    <div class="see">
+                        <a href="https://kurt-financial.netlify.app/">See project</a>
+                        <a href="https://github.com/AndersonJader0/kurt-financial">See code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
