@@ -182,4 +182,19 @@ header{
             transform: scale(.935);
         }
     }
+
+   
+
+    #whatsapp{
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        font-size: 4em;
+        background-color: green;
+        border-radius: 100%;
+        padding: .1em .15em;
+        &:hover {
+           cursor: pointer;
+        }
+    }
 }

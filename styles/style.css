@@ -157,6 +157,18 @@ header {
 .content .icons .fa-brands:active {
   transform: scale(0.935);
 }
+.content #whatsapp {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  font-size: 4em;
+  background-color: green;
+  border-radius: 100%;
+  padding: 0.1em 0.15em;
+}
+.content #whatsapp:hover {
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1000px) {
   .bar .sandwich {
@@ -243,6 +255,7 @@ main {
   flex-direction: row;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .about-me p, .about-me h3 {
   color: #222;
@@ -259,8 +272,13 @@ main {
   padding: 0em 2em;
   letter-spacing: 2;
   line-height: 2;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 1em;
+}
+.about-me .resume h3 {
+  border-left: 1px solid orange;
+  padding-left: 15px;
+  font-weight: 300;
 }
 .about-me a {
   color: #fff;
@@ -269,6 +287,16 @@ main {
   display: inline-block;
   margin-top: 1em;
   border-radius: 2em;
+}
+.about-me::before {
+  content: "";
+  height: 1px;
+  width: 1px;
+  border: 30px solid orange;
+  border-bottom-left-radius: 100px;
+  background-color: orange;
+  position: absolute;
+  right: 0;
 }
 
 .skills {

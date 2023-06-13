@@ -20,6 +20,7 @@ main{
     flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
     
     p,h3{
         color: #222;
@@ -39,8 +40,15 @@ main{
         padding: 0em 2em;
         letter-spacing: 2;
         line-height: 2;
-        font-weight: 500;
+        font-weight: 300;
         font-size: 1em;
+
+       h3{
+        border-left: 1px solid orange;
+        padding-left: 15px;
+        font-weight: 300;
+       }
+      
     }
     a{
         color: #fff;
@@ -49,6 +57,16 @@ main{
         display: inline-block;
         margin-top: 1em;
         border-radius: 2em;
+    }
+    &::before {
+        content: '';
+        height: 1px;
+        width: 1px;
+        border: 30px solid orange;
+        border-bottom-left-radius: 100px;
+        background-color: orange;
+        position: absolute;
+        right: 0;
     }
 }
 
